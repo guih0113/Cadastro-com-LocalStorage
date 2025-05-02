@@ -29,12 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const tabela = document.getElementById("dados");
-
     const registros = JSON.parse(localStorage.getItem("cadastro")) || [];
 
     if (registros.length === 0) {
         const linhaVazia = document.createElement("tr");
-        linhaVazia.innerHTML = `<td colspan="15" class="px-4 py-4 text-center text-black">Nenhum registro encontrado.</td>`;
+        linhaVazia.innerHTML = `<td colspan="15" class="px-4 py-4 text-black">Nenhum registro encontrado.</td>`;
         tabela.appendChild(linhaVazia);
     } else {
         registros.forEach((tcc) => {
