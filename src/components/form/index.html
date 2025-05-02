@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../output.css" rel="stylesheet">
     <link href="../../input.css" rel="stylesheet">
+    <script src="../index.js" defer></script>
     <title>Student Form</title>
 </head>
 <body>
@@ -21,31 +22,31 @@
         <div class="flex flex-col gap-4">
           <div>
             <label class="block text-color5 font-semibold mb-1">Código</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="codigo" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Data e Hora</label>
-            <input type="datetime-local" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="datetime-local" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="data_hora" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Prof. Orientador</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="prof_orientador" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Prof. Convidado 01</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="prof_convidado_01" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Prof. Convidado 02</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="prof_convidado_02" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Aluno 01</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="aluno_01" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Aluno 02</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="aluno_02" />
           </div>
         </div>
   
@@ -53,43 +54,34 @@
         <div class="flex flex-col gap-4">
           <div>
             <label class="block text-color5 font-semibold mb-1">Aluno 03</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="aluno_03" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Nome do TCC</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="nome_tcc" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Curso</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="curso" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Instituição</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="instituicao" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Cidade</label>
-            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="cidade" />
           </div>
           <div>
             <label class="block text-color5 font-semibold mb-1">Nota</label>
-            <input type="number" min="0" max="10" step="0.1" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+            <input type="number" min="0" max="10" step="0.1" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" id="nota" />
           </div>
           <div>
-            <label class="block text-color5 font-semibold mb-1">Aprovado</label>
-            <select class="w-full bg-color1 text-color4 border border-color3 rounded-md p-2 outline-none">
-              <option value="">Selecione</option>
-              <option value="sim">Sim</option>
-              <option value="nao">Não</option>
-            </select>
+            <button type="submit" class="w-full mt-7 bg-color5 text-black px-6 py-2 rounded-full hover:bg-color4 transition cursor-pointer" id="btn_submit">
+              Salvar
+            </button>
           </div>
         </div>
-      </div>
-  
-      <div class="mt-8 text-center w-full">
-        <button type="submit" class="w-1/2 text-center bg-color5 text-black px-6 py-2 rounded-full hover:bg-color4 transition cursor-pointer">
-          Salvar
-        </button>
       </div>
     </form>
   </div>
