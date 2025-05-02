@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../output.css" rel="stylesheet">
+    <link href="../../input.css" rel="stylesheet">
+    <title>Student Form</title>
+</head>
+<body>
+  <div class="min-h-screen bg-color1 flex items-center justify-center relative">
+    <div class="absolute top-4 left-4">
+      <a href="../index.html"><img src="../../assets/seta.png" alt="Seta" class="size-6"></a>
+    </div>
+
+    <form class="w-full mx-36 my-24 shadow-xl rounded-xl p-8 max-w-5xl">
+      <h1 class="text-4xl font-bold text-color5 mb-8 text-center">Student Form</h1>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Coluna 1 -->
+        <div class="flex flex-col gap-4">
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Código</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Data e Hora</label>
+            <input type="datetime-local" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Prof. Orientador</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Prof. Convidado 01</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Prof. Convidado 02</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Aluno 01</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Aluno 02</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+        </div>
+  
+        <!-- Coluna 2 -->
+        <div class="flex flex-col gap-4">
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Aluno 03</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Nome do TCC</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Curso</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Instituição</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Cidade</label>
+            <input type="text" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Nota</label>
+            <input type="number" min="0" max="10" step="0.1" class="w-full text-color5 border border-color3 rounded-md p-2 outline-none" />
+          </div>
+          <div>
+            <label class="block text-color5 font-semibold mb-1">Aprovado</label>
+            <select class="w-full bg-color1 text-color4 border border-color3 rounded-md p-2 outline-none">
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mt-8 text-center w-full">
+        <button type="submit" class="w-1/2 text-center bg-color5 text-black px-6 py-2 rounded-full hover:bg-color4 transition cursor-pointer">
+          Salvar
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
