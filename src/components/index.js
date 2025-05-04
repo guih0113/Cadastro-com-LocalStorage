@@ -2,7 +2,16 @@ const bntSubmit = document.getElementById("btn_submit");
 
 document.addEventListener('DOMContentLoaded', function() {
     if(bntSubmit){
-        bntSubmit.addEventListener('click', function() {
+        bntSubmit.addEventListener('click', function(e) {
+            const form = document.getElementById("form_tcc");
+
+            if (!form.checkValidity()) {
+                e.preventDefault();
+                form.reportValidity(); 
+                return;
+            }
+            e.preventDefault();
+
             const id = Date.now(); // gera um ID único com base na data
             const novoTCC = {
                 id, // adiciona o ID ao objeto
