@@ -6,6 +6,7 @@
     <link href="../../output.css" rel="stylesheet">
     <link href="../../input.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
     <title>Home</title>
 </head>
 <body class="">
@@ -15,7 +16,7 @@
         </div>
 
         <h1 class="flex flex-col text-color5 text-6xl font-bold">
-            <span class="text-color5">Hello,</span> Teacher!
+            <span class="text-color5">Olá,</span> <span id="teacher-name">Teacher!</span>
         </h1>
         <div class="grid grid-cols-2 gap-6">
             <a href="../newTcc/index.html">
@@ -36,6 +37,11 @@
             <a href="../viewTeachers/index.html">
                 <div class="w-40 bg-color2 text-center py-4 rounded-full text-gray-600 font-bold cursor-pointer transition transform hover:-translate-y-0.5">View Teachers</div>
             </a>
+        </div>
+        <div class="text-center">
+            <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-md">
+                Sair
+            </button>
         </div>
     </div>
 </body>

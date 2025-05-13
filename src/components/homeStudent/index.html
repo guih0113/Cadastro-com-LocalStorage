@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Student</title>
     <link href="../../output.css" rel="stylesheet">
     <link href="../../input.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Home Student</title>
+    <script src="index.js"></script>
 </head>
-<body>
-    <div class="bg-color1 min-h-screen relative">
-        <div class="absolute top-4 left-4">
-            <a href="../loginStudent/index.html"><img src="../../assets/seta.png" alt="Seta" class="size-6"></a>
+<body class="bg-color1 min-h-screen flex items-center justify-center">
+    <div class="absolute top-4 left-4">
+        <a href="../loginStudent/index.html"><img src="../../assets/seta.png" alt="Seta" class="size-6"></a>
+    </div>
+
+    <div class="bg-color2 shadow-xl rounded-2xl p-10 w-full max-w-md text-gray-700">
+        <h1 class="text-3xl font-bold mb-6 text-center text-color5">Bem-vindo(a), <span id="student-name">Aluno</span>!</h1>
+        <div class="space-y-4 text-lg">
+            <p><strong>Nome:</strong> <span id="info-nome" class="text-gray-800"></span></p>
+            <p><strong>Email:</strong> <span id="info-email" class="text-gray-800"></span></p>
+            <p><strong>Senha:</strong> <span id="info-senha" class="text-gray-800"></span></p>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button id="logoutBtn" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-6 rounded-full shadow-md">
+                Sair
+            </button>
         </div>
     </div>
 </body>
