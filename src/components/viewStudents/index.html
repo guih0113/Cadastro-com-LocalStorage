@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../output.css" rel="stylesheet">
+    <link href="../../input.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <title>View Students</title>
+</head>
+<body>
+    <div class="min-h-screen bg-color1 flex items-center justify-center relative">
+        <div class="absolute top-4 left-4">
+            <a href="../homeTeacher/index.html"><img src="../../assets/seta.png" alt="Seta" class="size-6"></a>
+        </div>
+
+        <div class="w-full mx-36 my-24 shadow-xl rounded-xl p-8 max-w-5xl">
+            <h1 class="text-color3 text-3xl font-bold text-center mb-6">Alunos Cadastrados</h1>
+            <div class="overflow-x-auto max-h-[400px] overflow-y-auto">
+                <table class="table-fixed text-sm w-full flex flex-col justify-center items-center">
+                    <thead class="">
+                        <tr>
+                            <th class="sticky top-0 z-10 px-4 py-2 whitespace-nowrap">Código</th>
+                            <th class="sticky top-0 z-10 px-4 py-2 whitespace-nowrap">Nome</th>
+                            <th class="sticky top-0 z-10 px-4 py-2 whitespace-nowrap">E-mail</th>
+                            <th class="sticky top-0 z-10 px-4 py-2 whitespace-nowrap">Senha</th>
+                            <th class="sticky top-0 z-10 px-4 py-2 whitespace-nowrap">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dados">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

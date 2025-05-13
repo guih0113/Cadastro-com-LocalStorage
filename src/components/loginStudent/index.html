@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../output.css" rel="stylesheet">
     <link href="../../input.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
 </head>
 <body>
@@ -22,17 +23,19 @@
                 <img src="../../assets/student-login.png" alt="student-login" class="w-full max-w-xs h-auto object-contain">
             </div>
             <div class="flex flex-col items-center justify-center text-xl">
-                <div class="w-full">
-                    <label for="email">Email ID</label>
-                    <input type="text" id="email" class="w-full border border-black rounded-3xl mt-1 outline-none px-2">
-                </div>
-                <div class="w-full mt-3">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" class="w-full border border-black rounded-3xl mt-1 outline-none px-2">
-                </div>
-                <div class="w-full mt-5">
-                    <input type="submit" value="Login" class="bg-color4 hover:bg-color3 cursor-pointer text-gray-700 font-medium rounded-3xl w-full py-1.5 outline-none shadow-xl">
-                </div>
+                <form action="../homeStudent/index.html">
+                    <div class="w-full">
+                        <label for="email">Email ID</label>
+                        <input type="text" id="email" class="w-full border border-black rounded-3xl mt-1 outline-none px-2">
+                    </div>
+                    <div class="w-full mt-3">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="w-full border border-black rounded-3xl mt-1 outline-none px-2">
+                    </div>
+                    <div class="w-full mt-5">
+                        <input type="submit" value="Login" class="bg-color4 hover:bg-color3 cursor-pointer text-gray-700 font-medium rounded-3xl w-full py-1.5 outline-none shadow-xl">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
