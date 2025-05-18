@@ -7,7 +7,7 @@ const defaultStudent = {
 
 let students = JSON.parse(localStorage.getItem("student")) || [];
 
-const exists = students.some(s => s.email === defaultTeacher.email);
+const exists = students.some(s => s.email === defaultStudent.email);
 
 if (!exists) {
     students.push(defaultStudent);
